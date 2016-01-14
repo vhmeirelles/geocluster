@@ -23,36 +23,20 @@
     </dependency>
   </dependencies>
 
-  
-  
-  <!--
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-source-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>attach-sources</id>
-            <phase>package</phase>
-            <goals>
-              <goal>jar</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin> 
-      <plugin>
+	<build>
+  <plugins>
+    <plugin>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-jar-plugin</artifactId>
       <configuration>
         <archive>
           <manifest>
-            <mainClass>App.java</mainClass>
+            <mainClass>Main.java</mainClass>
           </manifest>
         </archive>
       </configuration>
     </plugin>
-    </plugins>
-  </build>-->
+  </plugins>
+</build>
   
 </project>
