@@ -2,80 +2,13 @@ package wiiglo.geocluster;
 
 import java.util.HashSet;
 import java.util.Set;
-import java.util.concurrent.ConcurrentNavigableMap;
-import java.util.concurrent.ConcurrentSkipListMap;
 
 
 public class GeoCluster {
 	
 	private static final long OFFSET = 268435456;
 	private static final double RADIUS = 85445659.4471; /* $offset / pi() */
-	
-	private ConcurrentNavigableMap<Integer, ItemCoordinate> allItemCoordinates = new ConcurrentSkipListMap<Integer, ItemCoordinate>();
-	private ConcurrentNavigableMap<Integer, ItemCoordinate> activeItemCoordinates = new ConcurrentSkipListMap<Integer, ItemCoordinate>();
-	private ConcurrentNavigableMap<Integer, ConcurrentNavigableMap<Integer, ItemCoordinate>> countyCoordinates = new ConcurrentSkipListMap<Integer, ConcurrentNavigableMap<Integer, ItemCoordinate>>();
-	private ConcurrentNavigableMap<Integer, ConcurrentNavigableMap<Integer, ItemCoordinate>> stateCoordinates = new ConcurrentSkipListMap<Integer, ConcurrentNavigableMap<Integer, ItemCoordinate>>();
-	private ConcurrentNavigableMap<Integer, ConcurrentNavigableMap<Integer, ItemCoordinate>> regionCoordinates = new ConcurrentSkipListMap<Integer, ConcurrentNavigableMap<Integer, ItemCoordinate>>();
-	private boolean running = false;
-	private int initialClusterZoomLevel = 7;
-	private int clusterGridSize = 100;
-	private int minClusterZoomLevel = 4;
-	private int maxClusterZoomLevel = 18;
-	
-	
-	public Coordinate[] getItemCoordinates(BoundingBox bbox, int zoomLevel,
-			boolean all)  {
-		Set<Coordinate> elements = new HashSet<Coordinate>();
-
-		if (zoomLevel < initialClusterZoomLevel)
-			return elements.toArray(new Coordinate[elements.size()]);
-
-		int gridSize = clusterGridSize;
-		ConcurrentNavigableMap<Integer, ItemCoordinate> col = all ? allItemCoordinates
-				: activeItemCoordinates;
-		if (zoomLevel < minClusterZoomLevel) {
-			Cluster cluster = new Cluster();
-			cluster.addAll(col.values());
-			elements.add(cluster);
-		} else {
-			Set<Coordinate> coords = new HashSet<Coordinate>();
-			coords.addAll(getItemCoordinates(bbox, all));
-			if (zoomLevel > maxClusterZoomLevel)
-				return coords.toArray(new Coordinate[coords.size()]);
-
-			elements = cluster(coords, gridSize, zoomLevel);
-		}
-		return elements.toArray(new Coordinate[elements.size()]);
-	}
-
-	public Set<ItemCoordinate> getItemCoordinates(BoundingBox bbox, boolean all)
-			 {
-		Set<ItemCoordinate> coords = new HashSet<ItemCoordinate>();
-		ConcurrentNavigableMap<Integer, ItemCoordinate> col = all ? allItemCoordinates
-				: activeItemCoordinates;
-		for (ItemCoordinate coord : col.values()) {
-			if (coord.getX() >= bbox.getMinX()
-					&& coord.getX() <= bbox.getMaxX()
-					&& coord.getY() >= bbox.getMinY()
-					&& coord.getY() <= bbox.getMaxY()) {
-				coords.add(coord);
-			}
-		}
-
-		return coords;
-	}
-
-	private double haversineDistance(double lat1, double lon1, double lat2,
-			double lon2) {
-		double latd = Math.toRadians(lat2 - lat1);
-		double lond = Math.toRadians(lon2 - lon1);
-		double a = Math.sin(latd / 2) * Math.sin(latd / 2)
-				+ Math.cos(Math.toRadians(lat1))
-				* Math.cos(Math.toRadians(lat2)) * Math.sin(lond / 2)
-				* Math.sin(lond / 2);
-		double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-		return 6371.0 * c;
-	}
+		
 
 	private long lonToX(double lon) {
 		return Math.round(OFFSET + RADIUS * lon * Math.PI / 180);
@@ -100,7 +33,7 @@ public class GeoCluster {
 		return sqrt >> (21 - zoom);
 	}
 
-	private Set<Coordinate> cluster(Set<Coordinate> coords, int distance,
+	public Set<Coordinate> cluster(Set<Coordinate> coords, int distance,
 			int zoom) {
 		Set<Coordinate> elements = new HashSet<Coordinate>();
 		Set<Coordinate> removeList = new HashSet<Coordinate>();
@@ -138,7 +71,7 @@ public class GeoCluster {
 		return elements;
 	}
 
-	private int getBoundsZoomLevel(BoundingBox bbox, int width, int height) {
+	public int getBoundsZoomLevel(BoundingBox bbox, int width, int height) {
 		int worldHeight = 256;
 		int worldWidth = 256;
 
@@ -164,4 +97,16 @@ public class GeoCluster {
 		return zoomLevel;
 	}
 
+	public double haversineDistance(double lat1, double lon1, double lat2,
+			double lon2) {
+		double latd = Math.toRadians(lat2 - lat1);
+		double lond = Math.toRadians(lon2 - lon1);
+		double a = Math.sin(latd / 2) * Math.sin(latd / 2)
+				+ Math.cos(Math.toRadians(lat1))
+				* Math.cos(Math.toRadians(lat2)) * Math.sin(lond / 2)
+				* Math.sin(lond / 2);
+		double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+		return 6371.0 * c;
+	}
+	
 }
