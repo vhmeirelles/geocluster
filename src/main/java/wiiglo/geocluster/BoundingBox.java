@@ -1,6 +1,12 @@
 package wiiglo.geocluster;
 
-public class BoundingBox {
+import java.io.Serializable;
+/**
+ * 
+ * Classe que representa um Retângulo envolvente.
+ * 
+ */
+public class BoundingBox implements Serializable{
 	
 	private double minX;
 	private double minY;

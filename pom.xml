@@ -4,7 +4,7 @@
 
   <groupId>wiiglo</groupId>
   <artifactId>geocluster</artifactId>
-  <version>1</version>
+  <version>0.0.1</version>
   <packaging>jar</packaging>
 
   <name>geocluster</name>

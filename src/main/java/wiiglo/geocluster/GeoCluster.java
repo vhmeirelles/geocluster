@@ -2,7 +2,10 @@ package wiiglo.geocluster;
 
 import java.util.HashSet;
 import java.util.Set;
-
+/*
+ * @author victor
+ * Create clusters
+ */
 
 public class GeoCluster {
 	

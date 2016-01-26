@@ -3,7 +3,10 @@ package wiiglo.geocluster;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
-
+/**
+ * @author victor Classe que representa um cluster de individuos no mapa
+ * 
+ */
 public class Cluster extends Coordinate{
 
 	private Set<Coordinate> coords = new HashSet<Coordinate>();
