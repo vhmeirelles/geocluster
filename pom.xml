@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>vhmeirelles</groupId>
-  <artifactId>geocluster</artifactId>
+  <artifactId>gwt-geocluster</artifactId>
   <version>0.0.1</version>
   <packaging>jar</packaging>
 
-  <name>geocluster</name>
+  <name>gwt-geocluster</name>
   <url>https://github.com/vhmeirelles/geocluster</url>
 
   <properties>

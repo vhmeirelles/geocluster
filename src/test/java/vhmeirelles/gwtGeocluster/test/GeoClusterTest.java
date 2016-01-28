@@ -1,4 +1,4 @@
-package vhmeirelles.geocluster;
+package vhmeirelles.gwtGeocluster.test;
 
 import junit.framework.Test;
 import junit.framework.TestSuite;

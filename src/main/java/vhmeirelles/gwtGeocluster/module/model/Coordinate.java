@@ -1,4 +1,4 @@
-package vhmeirelles.geocluster;
+package vhmeirelles.gwtGeocluster.module.model;
 
 import java.io.Serializable;
 
