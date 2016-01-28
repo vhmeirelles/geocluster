@@ -1,3 +1,2 @@
 # geocluster
-Geospatial Cluster Zones Library
-Library gwt geocluster.
+Geospatial Cluster Zones Library (GeoCluster GWT Library)
