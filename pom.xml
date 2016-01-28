@@ -1,38 +1,42 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
   <groupId>vhmeirelles</groupId>
   <artifactId>gwt-geocluster</artifactId>
   <version>0.0.1</version>
   <packaging>jar</packaging>
-
+  
   <name>gwt-geocluster</name>
   <url>https://github.com/vhmeirelles/geocluster</url>
-
-<properties>
-               <!-- Convenience property to set the GWT version -->
-               <gwtVersion>2.7.0</gwtVersion>
-
-               <!-- GWT needs at least java 1.6 -->
-               <maven.compiler.source>1.7</maven.compiler.source>
-               <maven.compiler.target>1.7</maven.compiler.target>
-
-               <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-       </properties>
-
-<dependencyManagement>
-               <dependencies>
-                       <dependency>
-                               <groupId>com.google.gwt</groupId>
-                               <artifactId>gwt</artifactId>
-                               <version>${gwtVersion}</version>
-                               <type>pom</type>
-                               <scope>import</scope>
-                       </dependency>
-               </dependencies>
-       </dependencyManagement>
-
+  
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <testSourceDirectory>test</testSourceDirectory>
+    <resources>
+      <resource>
+        <directory>${basedir}/src/</directory>
+        <!--<excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>-->
+        <includes>
+        	<include>**/BoundingBox.java</include>
+        	<include>**/Cluster.java</include>
+        	<include>**/Coordinate.java</include>
+        	<include>**/GeoCluster.java</include>
+        	<include>**/gwtGeocluster.gwt.xml</include>
+        </includes>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.3</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
