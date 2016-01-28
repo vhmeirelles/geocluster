@@ -1,4 +1,4 @@
-package wiiglo.geocluster;
+package vhmeirelles.geocluster;
 
 import java.util.Collection;
 import java.util.HashSet;

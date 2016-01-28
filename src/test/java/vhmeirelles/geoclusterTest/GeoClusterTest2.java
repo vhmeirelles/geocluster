@@ -1,8 +1,10 @@
-package wiiglo.geocluster;
+package vhmeirelles.geoclusterTest;
 
 import java.util.*;
 
 import junit.framework.TestCase;
+import vhmeirelles.geocluster.Coordinate;
+import vhmeirelles.geocluster.GeoCluster;
 /*@author: Eric Ferreira
  * Test to cluster generate.
  * @return Clusters

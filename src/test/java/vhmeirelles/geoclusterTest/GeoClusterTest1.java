@@ -1,15 +1,17 @@
-package wiiglo.geocluster;
+package vhmeirelles.geoclusterTest;
 
 import java.util.*;
 
 import junit.framework.TestCase;
+import vhmeirelles.geocluster.Coordinate;
+import vhmeirelles.geocluster.GeoCluster;
 /*@author: Eric Ferreira
  * Test to cluster generate.
  * @return Clusters
  * @see Numbers of Clusters genereted
  * @param Coordinates, zoom level and distance of area. 
 */
-public class GeoClusterTest5 extends TestCase {
+public class GeoClusterTest1 extends TestCase {
 
 	private int distance;
 	private int zoomLevel;
@@ -28,7 +30,7 @@ public class GeoClusterTest5 extends TestCase {
 	protected void setUp() throws Exception {
 		super.setUp();
 		distance = 100;
-		zoomLevel = 6;
+		zoomLevel = 4;
 		
 		//RJ
 		coo1.setX(-22.902146);
@@ -104,8 +106,8 @@ public class GeoClusterTest5 extends TestCase {
 			i++;
 		}
 		
-		//Quantidade de clusters com o zoomLevel 6 e distância 100
-		int valorEsperado = 7;
+		//Quantidade de clusters com o zoomLevel 4 e distância 100
+		int valorEsperado = 4;
 		assertEquals(valorEsperado, i);
 		
 		//fail("Not yet implemented");
