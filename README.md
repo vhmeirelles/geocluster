@@ -1,3 +1,2 @@
 # geocluster
-Geospatial Cluster Zones Library
-Default Library
+Geospatial Cluster Zones Library (Default Library)
