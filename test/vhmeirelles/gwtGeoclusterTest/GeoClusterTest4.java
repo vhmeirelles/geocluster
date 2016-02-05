@@ -108,7 +108,7 @@ public class GeoClusterTest4 extends TestCase {
 		}
 		
 		//Quantidade de clusters com o zoomLevel 8 e distância 200
-		int valorEsperado = 8;
+		int valorEsperado = 9;
 		assertEquals(valorEsperado, i);
 		
 		//fail("Not yet implemented");
