@@ -8,6 +8,13 @@ import java.io.Serializable;
  */
 public class BoundingBox implements Serializable{
 	
+<<<<<<< HEAD
+=======
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2208968198563860476L;
+>>>>>>> GeoCluster
 	private double minX;
 	private double minY;
 	private double maxX;

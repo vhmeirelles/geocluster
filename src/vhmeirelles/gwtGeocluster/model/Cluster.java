@@ -9,6 +9,14 @@ import java.util.Set;
  */
 public class Cluster extends Coordinate{
 
+<<<<<<< HEAD
+=======
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4331869581104726381L;
+	
+>>>>>>> GeoCluster
 	private Set<Coordinate> coords = new HashSet<Coordinate>();
 
 	public int getQuantity() {
@@ -57,6 +65,17 @@ public class Cluster extends Coordinate{
 	public Set<Coordinate> getCoords() {
 		return coords;
 	}
+<<<<<<< HEAD
+=======
+	public SimpleCluster toSimpleCluster(){
+		SimpleCluster cluster = new SimpleCluster();
+		cluster.setX(getX());
+		cluster.setY(getY());
+		cluster.setQuantity(getQuantity());
+		cluster.setBbox(getBbox());
+		return cluster;
+	}
+>>>>>>> GeoCluster
 	
 	public boolean contains(Coordinate coord){
 		BoundingBox bounds = getBbox();

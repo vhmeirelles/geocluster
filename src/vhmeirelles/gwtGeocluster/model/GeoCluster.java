@@ -66,7 +66,12 @@ public class GeoCluster {
 			/* If a marker has been added to cluster, add also the one */
 			/* we were comparing to and remove the original from array. */
 			if (cluster.getQuantity() > 1) {
+<<<<<<< HEAD
 				elements.add(cluster);
+=======
+				SimpleCluster sc = cluster.toSimpleCluster();
+				elements.add(sc);
+>>>>>>> GeoCluster
 			} else {
 				elements.add(coord);
 			}

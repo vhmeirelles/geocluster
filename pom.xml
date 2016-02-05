@@ -22,6 +22,10 @@
         	<include>**/Cluster.java</include>
         	<include>**/Coordinate.java</include>
         	<include>**/GeoCluster.java</include>
+<<<<<<< HEAD
+=======
+        	<include>**/SimpleCluster.java</include>
+>>>>>>> GeoCluster
         	<include>**/gwtGeocluster.gwt.xml</include>
         </includes>
       </resource>

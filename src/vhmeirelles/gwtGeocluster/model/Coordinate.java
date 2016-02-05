@@ -2,6 +2,7 @@ package vhmeirelles.gwtGeocluster.model;
 
 import java.io.Serializable;
 
+<<<<<<< HEAD
 public class Coordinate implements Serializable{
 
 //private static final long serialVersionUID = -613933671140188238L;
@@ -21,13 +22,48 @@ public class Coordinate implements Serializable{
 		this.y = y;
 	}
 	/* (non-Javadoc)
+=======
+public class Coordinate implements Serializable {
+
+	private static final long serialVersionUID = -613933671140188238L;
+
+	private double x;
+	private double y;
+
+	public double getX() {
+		return x;
+	}
+
+	public void setX(double x) {
+		this.x = x;
+	}
+
+	public double getY() {
+		return y;
+	}
+
+	public void setY(double y) {
+		this.y = y;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+>>>>>>> GeoCluster
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
 	public String toString() {
 		return "Coordinate [x=" + x + ", y=" + y + "]";
 	}
+<<<<<<< HEAD
 	/* (non-Javadoc)
+=======
+
+	/*
+	 * (non-Javadoc)
+	 * 
+>>>>>>> GeoCluster
 	 * @see java.lang.Object#hashCode()
 	 */
 	@Override
@@ -41,7 +77,14 @@ public class Coordinate implements Serializable{
 		result = prime * result + (int) (temp ^ (temp >>> 32));
 		return result;
 	}
+<<<<<<< HEAD
 	/* (non-Javadoc)
+=======
+
+	/*
+	 * (non-Javadoc)
+	 * 
+>>>>>>> GeoCluster
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
 	@Override
@@ -59,6 +102,10 @@ public class Coordinate implements Serializable{
 			return false;
 		return true;
 	}
+<<<<<<< HEAD
+=======
+
+>>>>>>> GeoCluster
 	/**
 	 * @return Representação WKT de uma coordenada
 	 */
@@ -68,5 +115,9 @@ public class Coordinate implements Serializable{
 		wkt = wkt.replaceAll("y", String.valueOf(y));
 		return wkt;
 	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> GeoCluster
 }

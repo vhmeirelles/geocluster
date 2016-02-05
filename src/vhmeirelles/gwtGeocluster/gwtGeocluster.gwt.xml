@@ -5,5 +5,9 @@
 	  	<include name = "**/Cluster.java"/>
 	  	<include name = "**/Coordinate.java"/>
 	  	<include name = "**/GeoCluster.java"/>
+<<<<<<< HEAD
+=======
+	  	<include name = "**/SimpleCluster.java"/>
+>>>>>>> GeoCluster
 	  </source>
  </module>
