@@ -1,0 +1,10 @@
+<module>
+  <inherits name="com.google.gwt.user.User"/>
+	  <source path="model">
+	  	<include name = "**/BoundingBox.java"/>
+	  	<include name = "**/Cluster.java"/>
+	  	<include name = "**/Coordinate.java"/>
+	  	<include name = "**/GeoCluster.java"/>
+	  	<include name = "**/SimpleCluster.java"/>
+	  </source>
+ </module>
