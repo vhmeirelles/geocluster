@@ -1,4 +1,5 @@
 vhmeirelles\gwtGeocluster\model\Cluster.class
+vhmeirelles\gwtGeocluster\model\SimpleCluster.class
+vhmeirelles\gwtGeocluster\model\GeoCluster.class
 vhmeirelles\gwtGeocluster\model\Coordinate.class
 vhmeirelles\gwtGeocluster\model\BoundingBox.class
-vhmeirelles\gwtGeocluster\model\GeoCluster.class

@@ -1,20 +1,19 @@
 package vhmeirelles.gwtGeocluster.model;
 
 import java.io.Serializable;
+
 /**
  * 
  * Classe que representa um Retângulo envolvente.
  * 
  */
-public class BoundingBox implements Serializable{
-	
-<<<<<<< HEAD
-=======
+public class BoundingBox implements Serializable {
+
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = -2208968198563860476L;
->>>>>>> GeoCluster
+
 	private double minX;
 	private double minY;
 	private double maxX;
@@ -140,8 +139,7 @@ public class BoundingBox implements Serializable{
 
 	@Override
 	public String toString() {
-		return "BoundingBox [minX=" + minX + ", minY=" + minY + ", maxX="
-				+ maxX + ", maxY=" + maxY + "]";
+		return "BoundingBox [minX=" + minX + ", minY=" + minY + ", maxX=" + maxX + ", maxY=" + maxY + "]";
 	}
 
 	/**
@@ -157,8 +155,8 @@ public class BoundingBox implements Serializable{
 	}
 
 	public boolean contains(Coordinate coord) {
-		if (this.minX < coord.getX() && this.minY < coord.getY()
-				&& this.maxX > coord.getX() && this.maxY > coord.getY())
+		if (this.minX < coord.getX() && this.minY < coord.getY() && this.maxX > coord.getX()
+				&& this.maxY > coord.getY())
 			return true;
 		return false;
 	}

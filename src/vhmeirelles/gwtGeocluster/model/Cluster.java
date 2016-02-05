@@ -3,20 +3,18 @@ package vhmeirelles.gwtGeocluster.model;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
+
 /**
  * @author victor Classe que representa um cluster de individuos no mapa
  * 
  */
-public class Cluster extends Coordinate{
+public class Cluster extends Coordinate {
 
-<<<<<<< HEAD
-=======
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 4331869581104726381L;
-	
->>>>>>> GeoCluster
+
 	private Set<Coordinate> coords = new HashSet<Coordinate>();
 
 	public int getQuantity() {
@@ -65,9 +63,8 @@ public class Cluster extends Coordinate{
 	public Set<Coordinate> getCoords() {
 		return coords;
 	}
-<<<<<<< HEAD
-=======
-	public SimpleCluster toSimpleCluster(){
+
+	public SimpleCluster toSimpleCluster() {
 		SimpleCluster cluster = new SimpleCluster();
 		cluster.setX(getX());
 		cluster.setY(getY());
@@ -75,20 +72,19 @@ public class Cluster extends Coordinate{
 		cluster.setBbox(getBbox());
 		return cluster;
 	}
->>>>>>> GeoCluster
-	
-	public boolean contains(Coordinate coord){
+
+	public boolean contains(Coordinate coord) {
 		BoundingBox bounds = getBbox();
-		if (coord.getX() < bounds.getMinX()){
+		if (coord.getX() < bounds.getMinX()) {
 			return false;
 		}
-		if (coord.getX() > bounds.getMaxX()){
+		if (coord.getX() > bounds.getMaxX()) {
 			return false;
 		}
-		if (coord.getY() < bounds.getMinY()){
+		if (coord.getY() < bounds.getMinY()) {
 			return false;
 		}
-		if (coord.getY() > bounds.getMaxY()){
+		if (coord.getY() > bounds.getMaxY()) {
 			return false;
 		}
 		return true;
@@ -123,5 +119,5 @@ public class Cluster extends Coordinate{
 	public String toString() {
 		return "Cluster [coords=" + coords.toString() + "]";
 	}
-	
+
 }

@@ -1,4 +1,58 @@
 -------------------------------------------------------------------------------
 Test set: vhmeirelles.gwtGeoclusterTest.GeoClusterTest
 -------------------------------------------------------------------------------
-Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Tests run: 24, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec <<< FAILURE!
+testCluster(vhmeirelles.gwtGeoclusterTest.GeoClusterTest1)  Time elapsed: 0.009 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<4> but was:<8>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:201)
+	at junit.framework.Assert.assertEquals(Assert.java:207)
+	at vhmeirelles.gwtGeoclusterTest.GeoClusterTest1.testCluster(GeoClusterTest1.java:112)
+
+testCluster(vhmeirelles.gwtGeoclusterTest.GeoClusterTest2)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<9> but was:<11>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:201)
+	at junit.framework.Assert.assertEquals(Assert.java:207)
+	at vhmeirelles.gwtGeoclusterTest.GeoClusterTest2.testCluster(GeoClusterTest2.java:112)
+
+testCluster(vhmeirelles.gwtGeoclusterTest.GeoClusterTest3)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<3> but was:<6>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:201)
+	at junit.framework.Assert.assertEquals(Assert.java:207)
+	at vhmeirelles.gwtGeoclusterTest.GeoClusterTest3.testCluster(GeoClusterTest3.java:112)
+
+testCluster(vhmeirelles.gwtGeoclusterTest.GeoClusterTest4)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<8> but was:<9>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:201)
+	at junit.framework.Assert.assertEquals(Assert.java:207)
+	at vhmeirelles.gwtGeoclusterTest.GeoClusterTest4.testCluster(GeoClusterTest4.java:112)
+
+testCluster(vhmeirelles.gwtGeoclusterTest.GeoClusterTest5)  Time elapsed: 0.016 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<7> but was:<9>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:201)
+	at junit.framework.Assert.assertEquals(Assert.java:207)
+	at vhmeirelles.gwtGeoclusterTest.GeoClusterTest5.testCluster(GeoClusterTest5.java:112)
+
+testCluster(vhmeirelles.gwtGeoclusterTest.GeoClusterTest6)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<6> but was:<7>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:201)
+	at junit.framework.Assert.assertEquals(Assert.java:207)
+	at vhmeirelles.gwtGeoclusterTest.GeoClusterTest6.testCluster(GeoClusterTest6.java:112)
+
