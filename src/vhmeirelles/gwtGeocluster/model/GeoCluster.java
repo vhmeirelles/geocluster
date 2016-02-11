@@ -6,11 +6,13 @@ import java.util.Set;
  * @author victor
  * Create clusters
  */
+import java.util.logging.Logger;
 
 public class GeoCluster {
 
 	private static final long OFFSET = 268435456;
 	private static final double RADIUS = 85445659.4471; /* $offset / pi() */
+	private Logger logger = Logger.getLogger(this.getClass().getName());
 
 	private long lonToX(double lon) {
 		return Math.round(OFFSET + RADIUS * lon * Math.PI / 180);
@@ -40,6 +42,7 @@ public class GeoCluster {
 			if (removeList.contains(coord)) {
 				continue;
 			}
+
 			Cluster cluster = new Cluster();
 			cluster.add(coord);
 			/* Compare against all markers which are left. */
@@ -47,20 +50,24 @@ public class GeoCluster {
 				if (target.equals(coord)) {
 					continue;
 				}
+
 				int pixels = pixelDistance(coord.getY(), coord.getX(), target.getY(), target.getX(), zoom);
 				/* If two markers are closer than given distance remove */
 				/* target marker from array and add it to cluster. */
+
 				if (distance > pixels) {
 					cluster.add(target);
 					removeList.add(target);
+
 				}
+
 			}
 
 			/* If a marker has been added to cluster, add also the one */
 			/* we were comparing to and remove the original from array. */
 			if (cluster.getQuantity() > 1) {
-
-				elements.add(cluster);
+				logger.info("Cria o cluster");
+				// elements.add(cluster);
 
 				SimpleCluster sc = cluster.toSimpleCluster();
 				elements.add(sc);
