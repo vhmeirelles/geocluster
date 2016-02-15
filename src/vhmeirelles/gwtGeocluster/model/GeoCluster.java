@@ -12,7 +12,7 @@ public class GeoCluster {
 
 	private static final long OFFSET = 268435456;
 	private static final double RADIUS = 85445659.4471; /* $offset / pi() */
-	private Logger logger = Logger.getLogger(this.getClass().getName());
+	//private Logger logger = Logger.getLogger(this.getClass().getName());
 
 	private long lonToX(double lon) {
 		return Math.round(OFFSET + RADIUS * lon * Math.PI / 180);
@@ -66,7 +66,7 @@ public class GeoCluster {
 			/* If a marker has been added to cluster, add also the one */
 			/* we were comparing to and remove the original from array. */
 			if (cluster.getQuantity() > 1) {
-				logger.info("Cria o cluster");
+				
 				// elements.add(cluster);
 
 				SimpleCluster sc = cluster.toSimpleCluster();
