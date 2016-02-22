@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="24" failures="0" name="vhmeirelles.gwtGeoclusterTest.GeoClusterTest" time="0.018" errors="0" skipped="0">
+<testsuite tests="24" failures="0" name="vhmeirelles.gwtGeoclusterTest.GeoClusterTest" time="0.02" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/local/java/jdk1.8.0_73/jre/lib/amd64"/>
@@ -25,7 +25,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/home/eric/workspace/IPEA/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf7220185177726069102.tmp"/>
+    <property name="classworlds.conf" value="/home/eric/workspace/IPEA/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf2934326514011825236.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -38,7 +38,7 @@
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="user.name" value="eric"/>
-    <property name="java.class.path" value="/home/eric/eclipse/java-mars/eclipse/../../../.p2/pool/plugins/org.eclipse.m2e.maven.runtime_1.6.2.20150902-0001/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.class.path" value="/usr/local/maven/apache-maven-3.3.9/boot/plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/usr/local/java/jdk1.8.0_73/jre"/>
@@ -52,7 +52,7 @@
     <property name="securerandom.source" value="file:/dev/./urandom"/>
     <property name="sun.boot.class.path" value="/usr/local/java/jdk1.8.0_73/jre/lib/resources.jar:/usr/local/java/jdk1.8.0_73/jre/lib/rt.jar:/usr/local/java/jdk1.8.0_73/jre/lib/sunrsasign.jar:/usr/local/java/jdk1.8.0_73/jre/lib/jsse.jar:/usr/local/java/jdk1.8.0_73/jre/lib/jce.jar:/usr/local/java/jdk1.8.0_73/jre/lib/charsets.jar:/usr/local/java/jdk1.8.0_73/jre/lib/jfr.jar:/usr/local/java/jdk1.8.0_73/jre/classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/home/eric/workspace/IPEA/gwt-geocluster/EMBEDDED"/>
+    <property name="maven.home" value="/usr/local/maven/apache-maven-3.3.9"/>
     <property name="file.separator" value="/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -60,28 +60,28 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest1" name="testCluster" time="0.007"/>
-  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest1" name="testGetBoundsZoomLevel" time="0"/>
+  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest1" name="testCluster" time="0.008"/>
   <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest1" name="testHaversineDistance" time="0"/>
-  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest2" name="testCluster" time="0"/>
-  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest2" name="testGetBoundsZoomLevel" time="0"/>
+  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest1" name="testGetBoundsZoomLevel" time="0"/>
+  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest2" name="testCluster" time="0.001"/>
   <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest2" name="testHaversineDistance" time="0"/>
+  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest2" name="testGetBoundsZoomLevel" time="0"/>
   <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest3" name="testCluster" time="0.001"/>
-  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest3" name="testGetBoundsZoomLevel" time="0"/>
   <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest3" name="testHaversineDistance" time="0"/>
+  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest3" name="testGetBoundsZoomLevel" time="0"/>
   <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest4" name="testCluster" time="0.002"/>
-  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest4" name="testGetBoundsZoomLevel" time="0"/>
   <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest4" name="testHaversineDistance" time="0"/>
-  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest5" name="testCluster" time="0.006"/>
-  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest5" name="testGetBoundsZoomLevel" time="0"/>
+  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest4" name="testGetBoundsZoomLevel" time="0"/>
+  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest5" name="testCluster" time="0.002"/>
   <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest5" name="testHaversineDistance" time="0"/>
-  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest6" name="testCluster" time="0.001"/>
-  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest6" name="testGetBoundsZoomLevel" time="0"/>
+  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest5" name="testGetBoundsZoomLevel" time="0"/>
+  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest6" name="testCluster" time="0.002"/>
   <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest6" name="testHaversineDistance" time="0"/>
-  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest7" name="testCluster" time="0"/>
-  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest7" name="testGetBoundsZoomLevel" time="0"/>
+  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest6" name="testGetBoundsZoomLevel" time="0"/>
+  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest7" name="testCluster" time="0.002"/>
   <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest7" name="testHaversineDistance" time="0"/>
-  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest8" name="testCluster" time="0.001"/>
-  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest8" name="testGetBoundsZoomLevel" time="0"/>
+  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest7" name="testGetBoundsZoomLevel" time="0"/>
+  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest8" name="testCluster" time="0.002"/>
   <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest8" name="testHaversineDistance" time="0"/>
+  <testcase classname="vhmeirelles.gwtGeoclusterTest.GeoClusterTest8" name="testGetBoundsZoomLevel" time="0"/>
 </testsuite>
