@@ -35,4 +35,4 @@ esac
 # SOB=$(git var GIT_AUTHOR_IDENT | sed -n 's/^\(.*>\).*$/Signed-off-by: \1/p')
 # grep -qs "^$SOB" "$1" || echo "$SOB" >> "$1"
 
-echo "# Teste antes do commit!" > $1
+echo "# Please include a useful commit message!" > $1
