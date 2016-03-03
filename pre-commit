@@ -1,4 +1,0 @@
-#!/bin/sh
-
-echo "# Please include a useful commit aaa" > $1
-
